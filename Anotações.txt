@@ -1,0 +1,40 @@
+Ambiente:
+ - Instalar o Chocolatey para instalação do node via prompt em versão especifica.
+ - Instalar o NodeJs na versão instavel com o Chocolatey. 
+ - Instalar o gerenciador de pacote Yarn, pois é melhor do que o NPM.
+
+
+Projeto:
+ Criação do arquivo package.json
+ - yarn init -y
+ 
+ Instalação do framework para o node trabalhar com as rotas
+ - yarn add express
+ 
+ Comando para executar o servidor.
+ node src/server.js
+ 
+ Instalação da dependencia nodemon para reiniciar o server automaticamente quando houver alterações de código em desenvolvimento (-D)
+ Necessário criar o script no package.json
+ yarn add nodemon -D
+ 
+ Instalação e configuração da base de dados MongoDB foi online no MongoDB Atlas.
+ Configurações:
+  - Criar Cluster (servidor)
+  - Criar User
+  - Liberar Network Access
+  - Obter a string de conexão
+ 
+ Instalação do ODM mongoose para facilitar a interação (sintaxe) com o banco de dados.
+ yarn add mongoose
+ 
+ Instalação do pacote para fazer requisições a APIs externas.
+ yarn add axios
+ 
+ Instalação do pacote para realizar configurações de acesso a API desenvolvida.
+ yarn add cors
+ 
+Informações:
+ - O NodeJs venho do Google Chrome, é uma plataforma construida em cima da linguagem Javascript.
+ - O motor v8 do goole chrome é utilizado para processar os scripts de javascript, portanto o NodeJs utiliza esse motor v8 para rodar o javascript no backend.
+ 
