@@ -34,7 +34,16 @@ Projeto:
  Instalação do pacote para realizar configurações de acesso a API desenvolvida.
  yarn add cors
  
+ Criação de um projeto React
+ yarn create react-app frontend
+ 
+ Executa a aplicação.
+ yarn start
+ 
+ Instalação da lib para trabalhar com roteamento no react.
+ yarn add react-router-dom
+ 
 Informações:
  - O NodeJs venho do Google Chrome, é uma plataforma construida em cima da linguagem Javascript.
  - O motor v8 do goole chrome é utilizado para processar os scripts de javascript, portanto o NodeJs utiliza esse motor v8 para rodar o javascript no backend.
- 
+ - O React utiliza o babel e o webpack para automatizar o processo de transpilação do código (javascript com html) de uma forma que o navegador entenda.

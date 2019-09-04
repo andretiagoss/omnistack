@@ -1,0 +1,23 @@
+/* Adiciona margem e padding para todos os elementos não estrapolar a altura. */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+/* garante que os elementos da aplicação utilizará 100% de altura da tela. */
+html, body, #root {
+    height: 100%;
+}
+
+/* aplica a cor cinza para o fundo do body da aplicação. */
+body {
+    background: #f5f5f5;
+}
+
+/* aplica a font-family arial, senão tiver Helvetica e senão tiver sans-serif para os elementos em questão 
+o procedimento foi realizado pois por padrão os elementos abaixo não herdam a cor definida para o body*/
+body, input, button {
+    font-family: Arial, Helvetica, sans-serif;
+}
