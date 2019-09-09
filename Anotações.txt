@@ -5,6 +5,7 @@ Ambiente:
 
 
 Projeto:
+API
  Criação do arquivo package.json
  - yarn init -y
  
@@ -17,6 +18,9 @@ Projeto:
  Instalação da dependencia nodemon para reiniciar o server automaticamente quando houver alterações de código em desenvolvimento (-D)
  Necessário criar o script no package.json
  yarn add nodemon -D
+ 
+ Apos a criação do script com nome "dev", executar o comandos:
+ yarn dev
  
  Instalação e configuração da base de dados MongoDB foi online no MongoDB Atlas.
  Configurações:
@@ -33,7 +37,8 @@ Projeto:
  
  Instalação do pacote para realizar configurações de acesso a API desenvolvida.
  yarn add cors
- 
+
+Front-end 
  Criação de um projeto React
  yarn create react-app frontend
  
@@ -43,7 +48,27 @@ Projeto:
  Instalação da lib para trabalhar com roteamento no react.
  yarn add react-router-dom
  
+Mobile
+ Criação de projeto com react-native e com o nome tindev
+ npx react-native init tindev
+ 
+ Executar o app no emulador ou diretamente no celular
+ yarn react-native run-android ou ios
+ 
+ Apos instalar o app no celular, basta executar o comando:
+ yarn start
+ 
+ Instalação de módulos para realizar a navegação entre os componentes.
+ yarn add 
+    react-navigation //navegação basica.
+	react-native-gesture-handler //dependencia do react-navigation para lidar com gestos do usupario (Ex.: menu lateral)
+	react-native-reanimated //modulos para realizar transições entre componentes com animação.
+	
+ Instalação de módulo para um banco de dados chave valor para armazenar os dados do usuário, seria equivalente ao local_storage.	
+ yarn add @react-native-community/async-storage
+ 
 Informações:
  - O NodeJs venho do Google Chrome, é uma plataforma construida em cima da linguagem Javascript.
  - O motor v8 do goole chrome é utilizado para processar os scripts de javascript, portanto o NodeJs utiliza esse motor v8 para rodar o javascript no backend.
  - O React utiliza o babel e o webpack para automatizar o processo de transpilação do código (javascript com html) de uma forma que o navegador entenda.
+ - O Metro Bundler é utilizado para que o react-native consiga ler os arquivos javascript.
