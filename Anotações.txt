@@ -37,6 +37,9 @@ API
  
  Instalação do pacote para realizar configurações de acesso a API desenvolvida.
  yarn add cors
+ 
+ Instalação do pacote para trabalhar com web.socket na API, dessa forma será possivel enviar informações do backend para o frontend.
+ yarn add socket.io
 
 Front-end 
  Criação de um projeto React
@@ -47,6 +50,9 @@ Front-end
  
  Instalação da lib para trabalhar com roteamento no react.
  yarn add react-router-dom
+ 
+ Instalação do pacote para trabalhar com web.socket na API, dessa forma será possivel enviar informações do backend para o frontend.
+ yarn add socket.io-client
  
 Mobile
  Criação de projeto com react-native e com o nome tindev
@@ -59,13 +65,16 @@ Mobile
  yarn start
  
  Instalação de módulos para realizar a navegação entre os componentes.
- yarn add 
+ yarn add
     react-navigation //navegação basica.
 	react-native-gesture-handler //dependencia do react-navigation para lidar com gestos do usupario (Ex.: menu lateral)
 	react-native-reanimated //modulos para realizar transições entre componentes com animação.
 	
  Instalação de módulo para um banco de dados chave valor para armazenar os dados do usuário, seria equivalente ao local_storage.	
  yarn add @react-native-community/async-storage
+ 
+ Configura o redirecionamento de porta.
+ adb reverse tcp:3333 tcp:3333
  
 Informações:
  - O NodeJs venho do Google Chrome, é uma plataforma construida em cima da linguagem Javascript.

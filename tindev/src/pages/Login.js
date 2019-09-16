@@ -9,17 +9,22 @@ import logo from '../assets/logo.png';
 export default function Login({ navigation }){
     const [user, setUser] = useState('');
 
+    //dispara funcionalidades assim que o componente for exibido em tela, ou quando alguma informação é alterada.
     useEffect(() => {
         AsyncStorage.getItem('user').then(user => {
             if (user) {
                 navigation.navigate('Main', { user });
             }
         })
-    }, [])
+    }, 
+    [] //dentro do conchetes se coloca as variaveis a serem sondadas para executar determinada ação caso sejam alteradas. 
+       //Se deixar vazio será executado apenas uma vez.
+    )
 
     async function handleLogin() {
         try {
-            const response = await api.post('http://192.168.0.13:3333/devs', {
+            const response = await api.post('http://localhost:3333/devs', {
+            //const response = await api.post('/devs', { 
                 username: user
             });
 
@@ -29,7 +34,7 @@ export default function Login({ navigation }){
     
             console.log(_id);
     
-            navigation.navigate('Main', { _id });
+            navigation.navigate('Main', { user: _id });
          }
          catch (e) {
            console.error('Caiu no erro: ' + e.message);
@@ -43,10 +48,10 @@ export default function Login({ navigation }){
             style={styles.container}
         >
             <Image source={logo} />
-            
+
             <TextInput 
-                autoCapitalize="none"
-                autoCorrect={false}
+                autoCapitalize="none" //não colocar letra em caixa alta.
+                autoCorrect={false} //nao da sugestão de correção ao digitar o usuário.
                 placeholder="Digite seu usuário no Github"
                 placeholderTextColor="#999"
                 style={styles.input}
